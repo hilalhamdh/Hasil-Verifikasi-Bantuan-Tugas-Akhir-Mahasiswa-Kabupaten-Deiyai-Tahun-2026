@@ -1201,7 +1201,7 @@ export default function RekapanMahasiswaPage() {
                               {row.portalDikti}
                             </span>
                           </td>
-                          <td className="max-w-[240px] px-6 py-2.5 align-top text-md ">
+                          <td className="max-w-[240px] border border-slate-200 text-black px-6 py-2.5 align-top text-md ">
                             {row.verifikasi && row.verifikasi !== "nan" ? (
                               <span title={row.verifikasi}>{row.verifikasi}</span>
                             ) : (
