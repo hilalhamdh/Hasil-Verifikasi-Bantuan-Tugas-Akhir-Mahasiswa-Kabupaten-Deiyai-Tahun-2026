@@ -1141,7 +1141,7 @@ export default function RekapanMahasiswaPage() {
                     <th className="whitespace-nowrap border text-bold border-slate-300 px-4 py-3 text-center">
                       Portal Dikti
                     </th>
-                    <th className="whitespace-nowrap border text-bold border-slate-300 px-1 py-3 text-center">
+                    <th className="whitespace-nowrap border text-bold border-slate-300 px- py-3 text-center">
                       Verifikasi
                     </th>
                   </tr>
@@ -1201,7 +1201,7 @@ export default function RekapanMahasiswaPage() {
                               {row.portalDikti}
                             </span>
                           </td>
-                          <td className="max-w-[240px] border border-slate-200 px-6 py-2.5 align-top">
+                          <td className="max-w-[240px] border border-slate-200 px-6 py-2.5 align-top text-md">
                             {row.verifikasi && row.verifikasi !== "nan" ? (
                               <span title={row.verifikasi}>{row.verifikasi}</span>
                             ) : (
