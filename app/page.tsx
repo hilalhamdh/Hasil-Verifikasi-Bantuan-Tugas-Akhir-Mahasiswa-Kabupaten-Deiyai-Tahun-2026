@@ -700,7 +700,7 @@ export default function RekapanMahasiswaPage() {
                     <th className="whitespace-nowrap px-4 py-3.5">Tahun Masuk Akademik</th>
                     <th className="whitespace-nowrap px-4 py-3.5">Surat Keterangan Tugas Akhir</th>
                     <th className="whitespace-nowrap px-4 py-3.5">Portal Dikti</th>
-                    <th className="whitespace-nowrap px-4 py-3.5">Verifikasi</th>
+                    <th className="whitespace-nowrap px-8 py-3.5">Verifikasi</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
