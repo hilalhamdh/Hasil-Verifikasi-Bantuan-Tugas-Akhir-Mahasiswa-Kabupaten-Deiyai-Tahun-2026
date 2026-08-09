@@ -515,8 +515,8 @@ export default function RekapanMahasiswaPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-100 to-slate-50 px-4 py-8 md:px-8 lg:py-10">
-      <div className="mx-auto max-w-[1800px] space-y-6">
+    <main className="min-h-screen bg-gradient-to-b from-slate-100 to-slate-50 px-4 py-8 md:px-8 ">
+      <div className="mx-auto max-w-[1700px] space-y-6">
         {/* Header Section — Kop Surat */}
         <div className="rounded-2xl border border-slate-200/80 bg-white px-6 py-7 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_8px_24px_-12px_rgba(15,23,42,0.10)] md:px-10">
           <div className="relative flex flex-col items-center gap-2 text-center">
