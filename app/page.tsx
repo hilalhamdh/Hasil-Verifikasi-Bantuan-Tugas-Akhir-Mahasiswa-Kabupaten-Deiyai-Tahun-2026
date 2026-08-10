@@ -623,10 +623,7 @@ export default function RekapanMahasiswaPage() {
                   Hasil Verifikasi <br></br>  Bantuan Tugas Akhir Mahasiswa
                   <br className="hidden sm:block" /> Kabupaten Deiyai Tahun 2026
                 </h1>
-                <p className="mt-1.5 flex items-center justify-center gap-1.5 text-sm text-indigo-100">
-                  <Sparkles className="h-3.5 w-3.5" />
-                  Sistem pencarian cepat data mahasiswa terverifikasi
-                </p>
+              
               </div>
             </div>
           </div>
