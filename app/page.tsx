@@ -615,12 +615,12 @@ export default function RekapanMahasiswaPage() {
             <div className="pointer-events-none absolute -bottom-16 left-1/3 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
 
             <div className="relative flex flex-col items-center gap-3 text-center">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15 text-white ring-1 ring-white/30 backdrop-blur">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-white ring-1 ring-white/30 backdrop-blur">
                 <GraduationCap className="h-6 w-6" />
               </div>
               <div>
                 <h1 className="text-lg font-extrabold leading-snug tracking-tight text-white sm:text-xl md:text-2xl">
-                  Hasil Verifikasi Bantuan Tugas Akhir Mahasiswa
+                  Hasil Verifikasi <br></br>  Bantuan Tugas Akhir Mahasiswa
                   <br className="hidden sm:block" /> Kabupaten Deiyai Tahun 2026
                 </h1>
                 <p className="mt-1.5 flex items-center justify-center gap-1.5 text-sm text-indigo-100">
@@ -649,7 +649,7 @@ export default function RekapanMahasiswaPage() {
         </div>
 
         {/* Input Pencarian & Filter */}
-        <div className="space-y-4 rounded-3xl border border-slate-200/70 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_14px_32px_-18px_rgba(15,23,42,0.14)] sm:p-6">
+        <div className="space-y-4 rounded-xl border border-slate-200/70 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_14px_32px_-18px_rgba(15,23,42,0.14)] sm:p-6">
           <div className="flex flex-col items-stretch justify-between gap-3 md:flex-row md:items-center">
             <div className="relative flex-1">
               <Search className="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-indigo-400" />
@@ -721,7 +721,7 @@ export default function RekapanMahasiswaPage() {
 
         {/* Tampilan 1: Belum Melakukan Pencarian */}
         {!isSearchActive && (
-          <div className="space-y-3 rounded-3xl border border-dashed border-indigo-200 bg-white/70 p-14 text-center shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <div className="space-y-3 rounded-xl border border-dashed border-indigo-200 bg-white/70 p-14 text-center shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-500 text-white shadow-md shadow-indigo-500/25">
               <Search className="h-7 w-7" />
             </div>
@@ -738,7 +738,7 @@ export default function RekapanMahasiswaPage() {
 
         {/* Tampilan 2: Tabel Hasil Pencarian */}
         {isSearchActive && (
-          <div className="overflow-hidden rounded-3xl border border-slate-200/70 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_18px_40px_-20px_rgba(15,23,42,0.16)]">
+          <div className="overflow-hidden rounded-xl border border-slate-200/70 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_18px_40px_-20px_rgba(15,23,42,0.16)]">
             <div
               ref={scrollRef}
               onScroll={handleTableScroll}
@@ -777,7 +777,7 @@ export default function RekapanMahasiswaPage() {
                   {filteredData.length === 0 ? (
                     <tr>
                       <td colSpan={8} className="p-12 text-center">
-                        <div className="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-500">
+                        <div className="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-500">
                           <Info className="h-6 w-6" />
                         </div>
                         <p className="text-sm font-semibold text-slate-700">
@@ -846,7 +846,7 @@ export default function RekapanMahasiswaPage() {
             {/* Indikator scroll horizontal buatan */}
             <div className="relative h-1.5 w-full overflow-hidden bg-slate-100">
               <div
-                className="absolute inset-y-0 rounded-full bg-gradient-to-r from-indigo-500 to-sky-400 transition-[left,width] duration-100"
+                className="absolute inset-y-0 rounded-xl bg-gradient-to-r from-indigo-500 to-sky-400 transition-[left,width] duration-100"
                 style={{
                   width: `${scrollBar.widthPct}%`,
                   left: `${scrollBar.leftPct}%`,
@@ -882,7 +882,7 @@ function StatCard({
   value: React.ReactNode;
 }) {
   return (
-    <div className="flex items-center gap-4 rounded-2xl border border-slate-200/70 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_10px_26px_-16px_rgba(15,23,42,0.14)] transition hover:-translate-y-0.5 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-14px_rgba(79,70,229,0.20)]">
+    <div className="flex items-center gap-4 rounded-xl border border-slate-200/70 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_10px_26px_-16px_rgba(15,23,42,0.14)] transition hover:-translate-y-0.5 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-14px_rgba(79,70,229,0.20)]">
       <div
         className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br text-white shadow-md ${gradient}`}
       >
