@@ -687,14 +687,14 @@ export default function RekapanMahasiswaPage() {
                 onClick={() => setVerifikasiFilter("P1")}
                 colorClass="from-emerald-500 to-teal-500 shadow-emerald-500/25"
               >
-                Lolos Verifikasi 1
+                Lolos Verifikasi Prioritas 1
               </FilterPill>
               <FilterPill
                 active={verifikasiFilter === "P2"}
                 onClick={() => setVerifikasiFilter("P2")}
                 colorClass="from-cyan-500 to-sky-500 shadow-cyan-500/25"
               >
-                Lolos Verifikasi 2
+                Lolos Verifikasi Prioritas 2
               </FilterPill>
               <FilterPill
                 active={verifikasiFilter === "KP"}
