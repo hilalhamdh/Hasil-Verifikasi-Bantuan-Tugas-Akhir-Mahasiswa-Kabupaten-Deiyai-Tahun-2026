@@ -588,7 +588,7 @@ export default function RekapanMahasiswaPage() {
     <main className="min-h-screen bg-[radial-gradient(ellipse_at_top,_#eef2ff_0%,_#f8fafc_45%,_#f8fafc_100%)] px-4 py-8 md:px-8">
       <div className="mx-auto max-w-[1500px] space-y-5">
         {/* Header Section — Kop Surat + Hero judul, gaya lebih modern */}
-        <div className="overflow-hidden rounded-3xl border border-slate-200/70 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_18px_40px_-20px_rgba(79,70,229,0.25)]">
+        <div className="overflow-hidden rounded-lg border border-slate-200/70 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_18px_40px_-20px_rgba(79,70,229,0.25)]">
           {/* Kop surat */}
           <div className="flex flex-col items-center gap-3 px-6 pt-6 text-center sm:flex-row sm:items-center sm:gap-4 sm:px-8 sm:text-left">
             <img
@@ -615,7 +615,7 @@ export default function RekapanMahasiswaPage() {
             <div className="pointer-events-none absolute -bottom-16 left-1/3 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
 
             <div className="relative flex flex-col items-center gap-3 text-center">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-white ring-1 ring-white/30 backdrop-blur">
+              <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-white/15 text-white ring-1 ring-white/30 backdrop-blur">
                 <GraduationCap className="h-6 w-6" />
               </div>
               <div>
@@ -646,7 +646,7 @@ export default function RekapanMahasiswaPage() {
         </div>
 
         {/* Input Pencarian & Filter */}
-        <div className="space-y-4 rounded-xl border border-slate-200/70 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_14px_32px_-18px_rgba(15,23,42,0.14)] sm:p-6">
+        <div className="space-y-4 rounded-sm border border-slate-200/70 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_14px_32px_-18px_rgba(15,23,42,0.14)] sm:p-6">
           <div className="flex flex-col items-stretch justify-between gap-3 md:flex-row md:items-center">
             <div className="relative flex-1">
               <Search className="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-indigo-400" />
@@ -655,7 +655,7 @@ export default function RekapanMahasiswaPage() {
                 placeholder="Ketik Nama Mahasiswa, NIK, NIM, atau Jurusan untuk mencari..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-slate-50 py-3 pl-11 pr-10 text-sm font-medium text-slate-800 placeholder:font-normal placeholder:text-slate-400 transition focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-500/10"
+                className="w-full rounded-sm border border-slate-200 bg-slate-50 py-3 pl-11 pr-10 text-sm font-medium text-slate-800 placeholder:font-normal placeholder:text-slate-400 transition focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-500/10"
                 autoFocus
               />
               {searchTerm && (
@@ -674,32 +674,32 @@ export default function RekapanMahasiswaPage() {
 
           {/* Filter Verifikasi — pill berwarna */}
           <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 ">
               <FilterPill
                 active={verifikasiFilter === "ALL"}
                 onClick={() => setVerifikasiFilter("ALL")}
-                colorClass="from-indigo-500 to-blue-500 shadow-indigo-500/25"
+                colorClass="from-indigo-500 to-blue-500 rounded-sm"
               >
                 Semua Data
               </FilterPill>
               <FilterPill
                 active={verifikasiFilter === "P1"}
                 onClick={() => setVerifikasiFilter("P1")}
-                colorClass="from-emerald-500 to-teal-500 shadow-emerald-500/25"
+                colorClass="from-emerald-500 to-teal-500 shadow-emerald-500/25 rounded-sm"
               >
                 Lolos Verifikasi Prioritas 1
               </FilterPill>
               <FilterPill
                 active={verifikasiFilter === "P2"}
                 onClick={() => setVerifikasiFilter("P2")}
-                colorClass="from-cyan-500 to-sky-500 shadow-cyan-500/25"
+                colorClass="from-cyan-500 to-sky-500 shadow-cyan-500/25 rounded-sm"
               >
                 Lolos Verifikasi Prioritas 2
               </FilterPill>
               <FilterPill
                 active={verifikasiFilter === "KP"}
                 onClick={() => setVerifikasiFilter("KP")}
-                colorClass="from-amber-500 to-orange-500 shadow-amber-500/25"
+                colorClass="from-amber-500 to-orange-500 shadow-amber-500/25 rounded-sm"
               >
                 Lolos Verifikasi - Kelangkaan Profesi
               </FilterPill>
@@ -718,8 +718,8 @@ export default function RekapanMahasiswaPage() {
 
         {/* Tampilan 1: Belum Melakukan Pencarian */}
         {!isSearchActive && (
-          <div className="space-y-3 rounded-xl border border-dashed border-indigo-200 bg-white/70 p-14 text-center shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-500 text-white shadow-md shadow-indigo-500/25">
+          <div className="space-y-3 rounded-lg border border-dashed border-indigo-200 bg-white/70 p-14 text-center shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-blue-500 text-white shadow-md shadow-indigo-500/25">
               <Search className="h-7 w-7" />
             </div>
             <h3 className="text-base font-bold text-slate-800">
@@ -816,7 +816,7 @@ export default function RekapanMahasiswaPage() {
                           </td>
                           <td className="whitespace-nowrap px-4 py-3 align-top">
                             <span
-                              className={`inline-block rounded-full border px-2.5 py-1 text-[11px] font-semibold ${
+                              className={`inline-block rounded-lg border px-2.5 py-1 text-[11px] font-semibold ${
                                 isAktif
                                   ? "border-emerald-200 bg-emerald-50 text-emerald-700"
                                   : "border-rose-200 bg-rose-50 text-rose-700"
@@ -907,7 +907,7 @@ function FilterPill({
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer rounded-full px-4 py-2 text-xs font-semibold transition ${
+      className={`cursor-pointer rounded-lg px-4 py-2 text-xs font-semibold transition ${
         active
           ? `bg-gradient-to-r text-white shadow-md ${colorClass}`
           : "bg-slate-100 text-slate-600 hover:bg-slate-200"
